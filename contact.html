@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONTACT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .socials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:8px;}
+  .social-card{display:flex;align-items:center;gap:18px;padding:20px 22px;background:var(--bg-card);border:1px solid var(--border);text-decoration:none;color:var(--text-primary);transition:all var(--transition);position:relative;overflow:hidden;}
+  .social-card::before{content:'';position:absolute;inset:0;background:var(--purple-faint);opacity:0;transition:opacity var(--transition);}
+  .social-card:hover{border-color:var(--purple-border);transform:translateX(4px);box-shadow:0 4px 24px rgba(180,79,255,0.1);}
+  .social-card:hover::before{opacity:1;}
+  .sc-icon{width:48px;height:48px;border:1px solid var(--purple-border);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:18px;color:var(--purple);flex-shrink:0;background:var(--bg-panel);transition:background var(--transition);}
+  .social-card:hover .sc-icon{background:var(--purple-faint);}
+  .sc-body{flex:1;display:flex;flex-direction:column;gap:3px;}
+  .sc-platform{font-family:var(--font-mono);font-size:11px;color:var(--text-muted);letter-spacing:3px;}
+  .sc-handle{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--text-primary);}
+  .sc-desc{font-size:13px;color:var(--text-secondary);}
+  .sc-arrow{color:var(--purple);font-size:18px;opacity:0;transform:translateX(-6px);transition:all var(--transition);}
+  .social-card:hover .sc-arrow{opacity:1;transform:translateX(0);}
+  .sc-corner{position:absolute;width:10px;height:10px;}
+  .sc-corner.tl{top:0;left:0;border-top:2px solid var(--purple);border-left:2px solid var(--purple);}
+  .sc-corner.br{bottom:0;right:0;border-bottom:2px solid var(--purple);border-right:2px solid var(--purple);}
+
+  .contact-intro{max-width:580px;margin-bottom:52px;}
+  .contact-intro p{font-size:16px;color:var(--text-secondary);margin-bottom:12px;}
+
+  .section-divider{display:flex;align-items:center;gap:16px;margin:48px 0 28px;}
+  .sd-label{font-family:var(--font-mono);font-size:12px;color:var(--purple);letter-spacing:3px;white-space:nowrap;}
+  .sd-line{flex:1;height:1px;background:linear-gradient(90deg,var(--purple-border),transparent);}
+
+  .status-banner{display:flex;align-items:center;gap:14px;padding:18px 24px;border:1px solid rgba(168,85,247,0.3);background:rgba(168,85,247,0.06);margin-bottom:48px;}
+  .sb-dot{width:10px;height:10px;border-radius:50%;background:#a855f7;box-shadow:0 0 10px #a855f7;flex-shrink:0;animation:pulse-dot 2s infinite;}
+  .sb-text{font-family:var(--font-mono);font-size:13px;color:#c084fc;letter-spacing:1px;}
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="grid-bg"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>
+    <span class="logo-text">Zelda<span class="accent">.Ng</span></span>
+    <span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link active">// HOME</a></li>
+    <li><a href="works.html" class="nav-link">// WORKS</a></li>
+    <li><a href="contact.html" class="nav-link">// CONTACT</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span class="status-text">ONLINE</span>
+  </div>
+</nav>
+
+<main class="page">
+
+  <section class="page-hero">
+    <div class="hero-tag">ESTABLISHING CONNECTION...</div>
+    <h1 class="page-title">GET IN <span class="accent-glow">TOUCH</span></h1>
+  </section>
+
+  <div class="status-banner">
+    <div class="sb-dot"></div>
+    <span class="sb-text">CURRENTLY AVAILABLE FOR INTERNSHIPS!</span>
+  </div>
+
+  <div class="contact-intro">
+    <p>I'm open to internship opportunities in game design, 3D modelling, environment art, and app/web development.</p>
+    <p>Reach out through any of the platforms below. I'm most responsive via email or LinkedIn.</p>
+  </div>
+
+  <div class="section-divider">
+    <span class="sd-label">// FIND ME ON</span>
+    <div class="sd-line"></div>
+  </div>
+
+  <div class="socials-grid">
+
+    <a href="https://linkedin.com/in/zeldadang" target="_blank" rel="noopener" class="social-card">
+      <div class="sc-icon">in</div>
+      <div class="sc-body">
+        <span class="sc-platform">LINKEDIN</span>
+        <span class="sc-handle">/in/zeldadang</span>
+        <span class="sc-desc">Work history & connections</span>
+      </div>
+      <span class="sc-arrow">→</span>
+      <div class="sc-corner tl"></div><div class="sc-corner br"></div>
+    </a>
+
+    <a href="https://sketchfab.com/zeldang" target="_blank" rel="noopener" class="social-card">
+      <div class="sc-icon">◈</div>
+      <div class="sc-body">
+        <span class="sc-platform">Sketchfab</span>
+        <span class="sc-handle">sketchfab.com/zeldang</span>
+        <span class="sc-desc">3D models</span>
+      </div>
+      <span class="sc-arrow">→</span>
+      <div class="sc-corner tl"></div><div class="sc-corner br"></div>
+    </a>
+
+    <a href="https://github.com/gootflove" target="_blank" rel="noopener" class="social-card">
+      <div class="sc-icon">⌥</div>
+      <div class="sc-body">
+        <span class="sc-platform">GITHUB</span>
+        <span class="sc-handle">github.com/gootflove</span>
+        <span class="sc-desc">Code repos & projects</span>
+      </div>
+      <span class="sc-arrow">→</span>
+      <div class="sc-corner tl"></div><div class="sc-corner br"></div>
+    </a>
+
+
+    <a href="mailto:zeldangxinyi@gmail.com" class="social-card">
+      <div class="sc-icon">✉</div>
+      <div class="sc-body">
+        <span class="sc-platform">EMAIL</span>
+        <span class="sc-handle">zeldangxinyi@gmail.com</span>
+        <span class="sc-desc">Send me an email!</span>
+      </div>
+      <span class="sc-arrow">→</span>
+      <div class="sc-corner tl"></div><div class="sc-corner br"></div>
+    </a>
+
+    <a href="tel:+6591234567" class="social-card">
+      <div class="sc-icon">✆</div>
+      <div class="sc-body">
+        <span class="sc-platform">PHONE</span>
+        <span class="sc-handle">+65 8834 1902</span>
+        <span class="sc-desc">Text or call anytime</span>
+      </div>
+      <span class="sc-arrow">→</span>
+      <div class="sc-corner tl"></div><div class="sc-corner br"></div>
+    </a>
+  </div>
+
+  
+
+</main>
+
+<footer class="site-footer">
+  <span class="footer-text">© 2026 Zelda_Ng // GAME DESIGNER & DEV // ALL RIGHTS RESERVED</span>
+  <span class="footer-tag">v1.0.0</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

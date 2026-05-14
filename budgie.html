@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budgie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .proto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .proto-card {
+    position: relative;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 60px 32px;
+    text-align: center;
+    transition: border-color var(--transition);
+  }
+
+  .proto-card.phone {
+    background: linear-gradient(rgba(12,9,30,0.78), rgba(12,9,30,0.78)), url('images/phone.png') center/cover no-repeat;
+  }
+
+  .proto-card.watch {
+    background: linear-gradient(rgba(12,9,30,0.78), rgba(12,9,30,0.78)), url('images/watch.png') center/cover no-repeat;
+  }
+
+  .proto-card:hover { border-color: var(--purple-border); }
+
+  .proto-icon { font-size: 48px; color: var(--purple-border); line-height: 1; }
+
+  .proto-device {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--purple);
+  }
+
+  .proto-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+  .proto-btn { margin-top: 8px; font-size: 13px; padding: 12px 28px; }
+
+  .proto-corner { position: absolute; width: 14px; height: 14px; }
+  .proto-corner.tl { top: -1px; left: -1px; border-top: 2px solid var(--purple); border-left: 2px solid var(--purple); }
+  .proto-corner.tr { top: -1px; right: -1px; border-top: 2px solid var(--purple); border-right: 2px solid var(--purple); }
+  .proto-corner.bl { bottom: -1px; left: -1px; border-bottom: 2px solid var(--purple); border-left: 2px solid var(--purple); }
+  .proto-corner.br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--purple); border-right: 2px solid var(--purple); }
+
+  .project-body {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .project-desc-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (max-width: 900px) {
+    .proto-grid { grid-template-columns: 1fr; }
+    .project-body { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="grid-bg"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>
+    <span class="logo-text">Zelda<span class="accent">.Ng</span></span>
+    <span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">// HOME</a></li>
+    <li><a href="works.html" class="nav-link active">// WORKS</a></li>
+    <li><a href="contact.html" class="nav-link">// CONTACT</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span class="status-text">ONLINE</span>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="project-detail">
+
+    <a href="works.html" class="btn-back">
+      <span class="arrow">←</span> BACK TO WORKS
+    </a>
+
+    <div class="project-header">
+      <h1 class="project-title">Budgie<span class="accent">.</span></h1>
+      <div class="project-tags">
+        <span class="tag">APP / WEB DEVELOPMENT</span>
+      </div>
+    </div>
+
+    <div class="proto-grid">
+
+      <div class="proto-card phone">
+        <div class="proto-icon">📱</div>
+        <p class="proto-device">PHONE PROTOTYPE</p>
+        <p class="proto-desc">Interactive prototype for the mobile phone version of the Budgie banking app.</p>
+        <a href="https://www.figma.com/proto/XZcpUHqbUYgGuIKl8B99CT/Zelda_DUX_Assignment1?node-id=22-2&t=Wq5UvbCPIWnEjmoY-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=22%3A2" target="_blank" rel="noopener" class="btn-primary proto-btn">
+          OPEN PHONE PROTOTYPE <span class="btn-arrow">→</span>
+        </a>
+        <div class="proto-corner tl"></div><div class="proto-corner tr"></div>
+        <div class="proto-corner bl"></div><div class="proto-corner br"></div>
+      </div>
+
+      <div class="proto-card watch">
+        <div class="proto-icon">⌚</div>
+        <p class="proto-device">WATCH PROTOTYPE</p>
+        <p class="proto-desc">Interactive prototype for the smartwatch companion version of the Budgie banking app.</p>
+        <a href="https://www.figma.com/proto/XZcpUHqbUYgGuIKl8B99CT/Zelda_DUX_Assignment1?node-id=78-212&t=XV4nwQXvU1h9UIS2-1&scaling=scale-down&content-scaling=fixed&page-id=78%3A168&starting-point-node-id=78%3A212&show-proto-sidebar=1" target="_blank" rel="noopener" class="btn-primary proto-btn">
+          OPEN WATCH PROTOTYPE <span class="btn-arrow">→</span>
+        </a>
+        <div class="proto-corner tl"></div><div class="proto-corner tr"></div>
+        <div class="proto-corner bl"></div><div class="proto-corner br"></div>
+      </div>
+
+    </div>
+
+    <div class="project-body">
+
+      <div class="project-desc-column">
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// PROJECT OVERVIEW</p>
+          <div class="project-desc-text">
+            <p>
+              Budgie is a modern banking app designed to provide a seamless and secure financial management experience across multiple platforms. The app offers features such as account management, transaction tracking, and budgeting tools, all with a focus on user-friendly design and intuitive navigation.
+            </p>
+            <p>
+              The app also includes a calculator, spending history, and the current stock market index, providing users with comprehensive financial insights at their fingertips.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// LEARNING OBJECTIVES</p>
+          <div class="project-desc-text">
+            <p>
+              Design and prototype a multi-platform application with a consistent user experience across devices using Figma.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// AREAS OF IMPROVEMENT</p>
+          <div class="project-desc-text">
+            <p>
+              The app can be better optimized for performance and user engagement across different devices.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project-sidebar">
+        <div class="sidebar-panel">
+          <p class="sidebar-title">// PROJECT INFO</p>
+          <div class="sidebar-item">
+            <span class="sidebar-label">MODULE</span>
+            <span class="sidebar-value">Designing User Experience</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">TOOL</span>
+            <span class="sidebar-value">Figma</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">DURATION</span>
+            <span class="sidebar-value">4 weeks</span>
+            <span class="sidebar-value">May 2025 – June 2025</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">COLLABORATION</span>
+            <span class="sidebar-value">Solo</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span class="footer-text">© 2026 Zelda_Ng // GAME DESIGNER & DEV // ALL RIGHTS RESERVED</span>
+  <span class="footer-tag">v1.0.0</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

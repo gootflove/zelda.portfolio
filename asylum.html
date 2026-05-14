@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lunatic Asylum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .project-body {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .project-desc-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project-sidebar {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  @media (max-width: 900px) {
+    .project-body {
+      grid-template-columns: 1fr;
+    }
+    .project-sidebar {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="grid-bg"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>
+    <span class="logo-text">Zelda<span class="accent">.Ng</span></span>
+    <span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link active">// HOME</a></li>
+    <li><a href="works.html" class="nav-link">// WORKS</a></li>
+    <li><a href="contact.html" class="nav-link">// CONTACT</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span class="status-text">ONLINE</span>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="project-detail">
+
+    <a href="works.html" class="btn-back">
+      <span class="arrow">←</span> BACK TO WORKS
+    </a>
+
+    <div class="project-header">
+      <h1 class="project-title">Lunatic Asylum</h1>
+      <div class="project-tags">
+        <span class="tag">GAME DEVELOPMENT</span>
+      </div>
+    </div>
+
+    <div class="video-section">
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/05soqPWa7Ic?si=yVdhKdAeI2SJhiwW"
+          title="Lunatic Asylum"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-corner tl"></div>
+      <div class="video-corner tr"></div>
+      <div class="video-corner bl"></div>
+      <div class="video-corner br"></div>
+    </div>
+
+    <div class="project-body">
+
+      <div class="project-desc-column">
+        <div class="project-desc-section">
+          <p class="desc-heading">// PROJECT OVERVIEW</p>
+          <div class="project-desc-text">
+            <p>
+              This project is a 3D horror-themed asylum environment developed in Unity, where players must navigate through an asylum to retrieve their missing medicine. Throughout the game, players will explore different sections of the asylum while overcoming various obstacles, hazards, and environmental challenges that block their path.</p>
+          </div>
+        </div>
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// LEARNING OBJECTIVES</p>
+          <div class="project-desc-text">
+            <p>
+              - Do a tracking system for the player to collect items and progress through the game.
+            </p>
+            <p>
+              - Implement physics-based interactions, such as pushing objects.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// AREAS OF IMPROVEMENT</p>
+          <div class="project-desc-text">
+            <p>
+              The entire game is so boring and empty without any enemies or puzzles to make the gameplay more engaging. I would like to add in some simple enemy AI and puzzle mechanics to make the game more fun to play.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sidebar">
+        <div class="sidebar-panel">
+          <p class="sidebar-title">// PROJECT INFO</p>
+          <div class="sidebar-item">
+            <span class="sidebar-label">MODULE</span>
+            <span class="sidebar-value">Interactive 3D EXPERIENCE</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">ENGINE</span>
+            <span class="sidebar-value">Unity</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">TOOLS</span>
+            <span class="sidebar-value">Unity, Unity Asset Store, C#</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">DURATION</span>
+            <span class="sidebar-value">4 weeks</span>
+            <span class="sidebar-value">July 2025 – Aug 2025</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">COLLABORATION</span>
+            <span class="sidebar-value">Solo</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span class="footer-text">© 2026 Zelda_Ng // GAME DESIGNER & DEV // ALL RIGHTS RESERVED</span>
+  <span class="footer-tag">v1.0.0</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
