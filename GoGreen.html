@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoGreen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .figma-section {
+    position: relative;
+    margin-bottom: 48px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+  }
+
+  .figma-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 80px 40px;
+    text-align: center;
+    background: linear-gradient(rgba(12,9,30,0.78), rgba(12,9,30,0.78)), url('images/een.png') center/cover no-repeat;
+  }
+
+  .figma-preview-icon {
+    font-size: 56px;
+    color: var(--purple-border);
+    line-height: 1;
+  }
+
+  .figma-preview-label {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--purple);
+  }
+
+  .figma-preview-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 400px;
+    line-height: 1.7;
+  }
+
+  .figma-btn {
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 14px 36px;
+  }
+
+  .figma-corner { position: absolute; width: 18px; height: 18px; }
+  .figma-corner.tl { top: -1px; left: -1px; border-top: 2px solid var(--purple); border-left: 2px solid var(--purple); }
+  .figma-corner.tr { top: -1px; right: -1px; border-top: 2px solid var(--purple); border-right: 2px solid var(--purple); }
+  .figma-corner.bl { bottom: -1px; left: -1px; border-bottom: 2px solid var(--purple); border-left: 2px solid var(--purple); }
+  .figma-corner.br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--purple); border-right: 2px solid var(--purple); }
+
+  .project-body {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .project-desc-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (max-width: 900px) {
+    .project-body { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="grid-bg"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>
+    <span class="logo-text">Zelda<span class="accent">.Ng</span></span>
+    <span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">// HOME</a></li>
+    <li><a href="works.html" class="nav-link active">// WORKS</a></li>
+    <li><a href="contact.html" class="nav-link">// CONTACT</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span class="status-text">ONLINE</span>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="project-detail">
+
+    <a href="works.html" class="btn-back">
+      <span class="arrow">←</span> BACK TO WORKS
+    </a>
+
+    <div class="project-header">
+      <h1 class="project-title">GoGreen<span class="accent">.</span></h1>
+      <div class="project-tags">
+        <span class="tag">APP / WEB DEVELOPMENT</span>
+      </div>
+    </div>
+
+    <div class="figma-section">
+      <div class="figma-preview">
+        <p class="figma-preview-label">INTERACTIVE PROTOTYPE</p>
+        <p class="figma-preview-desc">Click below to open and interact with the full Figma prototype in a new tab.</p>
+        <a href="https://www.figma.com/proto/rps1pOHW5qQvVcj8avcoxR/GC-ASG2?node-id=3-23&t=LoQ8tA2rzjQ4XHGC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=20%3A100" target="_blank" rel="noopener" class="btn-primary figma-btn">
+          OPEN PROTOTYPE <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div class="figma-corner tl"></div>
+      <div class="figma-corner tr"></div>
+      <div class="figma-corner bl"></div>
+      <div class="figma-corner br"></div>
+    </div>
+
+    <div class="project-body">
+
+      <div class="project-desc-column">
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// PROJECT OVERVIEW</p>
+          <div class="project-desc-text">
+            <p>
+              GoGreen is a mobile app to encourage users to take public transport, cycle or walk instead of driving, in order to reduce carbon emissions and promote a more sustainable lifestyle.
+            </p>
+            <p>
+                This app helps users navigate to their destinations, track how much carbon emissions they have saved, and provides rewards for using sustainable modes of transport.
+            </p>
+            <p>
+                There are eco-friendly rewards users can redeem for using sustainable modes of transport, such as reusable bags, containers, compost bins and more.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// LEARNING OBJECTIVES</p>
+          <div class="project-desc-text">
+            <p>
+              Make use of common gamification mechanics to engage the target users and encourage them to use sustainable modes of transport.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-desc-section">
+          <p class="desc-heading">// AREAS OF IMPROVEMENT</p>
+          <div class="project-desc-text">
+            <p>
+              The user interface could be more visually engaging and the app could have more interactive features.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sidebar">
+        <div class="sidebar-panel">
+          <p class="sidebar-title">// PROJECT INFO</p>
+          <div class="sidebar-item">
+            <span class="sidebar-label">MODULES</span>
+            <span class="sidebar-value">Gamification Concepts</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">TOOLS</span>
+            <span class="sidebar-value">Figma</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">DURATION</span>
+            <span class="sidebar-value">4 weeks</span>
+            <span class="sidebar-value">Dec 2024 – Jan 2025</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-label">COLLABORATION</span>
+            <span class="sidebar-value">Solo</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span class="footer-text">© 2026 Zelda_Ng // GAME DESIGNER & DEV // ALL RIGHTS RESERVED</span>
+  <span class="footer-tag">v1.0.0</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+
